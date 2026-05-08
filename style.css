@@ -9,16 +9,21 @@
 }
 
 
-/* ── HEADER ── */
 .logo {
     background-color: #ffffff;
     padding: 14px 32px;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    margin-top: 10px ;
+    margin-bottom: none;
     
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    margin-top: 1px;
     border-radius: 4px;
 }
 .logo ul {
@@ -26,16 +31,33 @@
     display: flex;          
     gap: 24px;
     justify-content: flex-end;
+    
 }
 
 .logo ul a {
-    color: rgb(2, 2, 2);
+    color: rgb(45, 49, 241);
     font-size: 15px;
     cursor: pointer;
     text-decoration: none;
+    background-color: #ffffff;
+    margin-bottom: 3px;
+    padding: 5px;
+    border-radius: 2px ;
 }
 
-/* ── TÍTULO HERO ── */
+.logo ul a:active {
+   
+    background-color: rgb(45, 49, 241);
+    color: white;
+   
+
+}
+
+.logo ul .selecionado {
+    background-color: blue;
+    color: white;
+}
+
 .titulo {
     background-color: #2b2b2b;
     color: white;
@@ -46,19 +68,21 @@
     padding: 60px 48px;
 }
 
-/* ── SEÇÃO SOLUÇÕES ── */
+
+
 .solucoes {
     display: flex;
-    flex-direction: column; /* empilha: h2 em cima, parágrafo, depois os cards */
-    align-items: flex-start;
+    flex-direction: column; 
+    align-items: center;
     width: 100%;
     padding: 40px 48px;
     background-color: #f0f0f0;
 }
 
 .solucoes h2 {
-    font-size: 20px;
+    font-size: 20px; 
     margin-bottom: 8px;
+  
 }
 
 .solucoes > p {
@@ -67,10 +91,9 @@
     margin-bottom: 28px;
 }
 
-/* ── LISTA DE CARDS (as três bombas) ── */
+
 ul.bombas {
-    display: flex;          /* coloca os 3 cards lado a lado */
-    gap: 20px;
+    display: flex;          
     list-style-type: none;
     flex-wrap: wrap;
 }
@@ -83,6 +106,7 @@ ul.bombas li {
     width: 200px;
     font-size: 13px;
     color: #333;
+    text-align: center;
     
 }
 
@@ -104,7 +128,7 @@ ul.bombas li p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #28a745;
+    background-color: #46e96c;
     color: white;
     padding: 4px 10px;
     border-radius: 4px;
@@ -114,18 +138,28 @@ ul.bombas li p {
     cursor: pointer;
 }
 
+ #sub  {
+
+    margin-top: 27px;
+/* Isso aqui foi uma gambiarra horrorosa, tô fazendo de cabeça a página*/
+}
+
 .bombas button {
     background-color: transparent;
      outline: none;  
      border: none;
+
 }
 
-/* ── FOOTER ── */
 footer {
-  width: 100%;
-  height: -moz-fit-content;
+  width: 96.5%;
+  padding: 1px;  
   height: fit-content;
   background-color: rgb(92, 92, 92);
+   bottom: 0;
+    position: fixed;
+    margin-right: 100px ;
+    
 }
 footer h3 {
   display: flex;
@@ -151,48 +185,128 @@ footer p {
   margin: 10px 0px;
   background-color: black;
   color: white;
-  width: 100%;
-}/*# sourceMappingURL=style.css.map */
-
-/*
-
-
-
-
-
-.solucoes {
-    display: flex;
-    text-align: center;
-    align-content: center;
+  
+  margin-bottom: none;
+  
 }
 
-ul{
+
+/*A paritr daqui é a página Sobre.html*/
+
+.historia {
+
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px grey;
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    border-radius: 6px;
+    padding: 16px;
+    width: 500px;
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+    margin:  auto;
+    margin-top: 200px;
     
-    list-style-type:none ;
+
 }
 
-footer {
-    margin: auto;
-    background-color: gainsboro;
-    text-align: center;
+.historia h3 {
+    padding: 10px;
 }
 
-footer p {
+.historia img {
+    height: 70px;
+    width: 80px;
+    margin: 10px;
+}
+
+.historia p {
+    padding: 10px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: black;
-    color: white;
-    border: none;
+    flex-direction: column;
 }
 
-footer img{
-margin: 20px;
-padding: 10px;
-width: 20px;
-height: 20px;
+
+
+/*A paritr daqui é a página Contato.html*/
+
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 16px;
 }
 
-footer ul {
-    display: flex;
-    justify-content: center;
-} / */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 380px;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+.card input,
+.card textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #374151;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 14px;
+  font-family: inherit;
+}
+
+.card input::placeholder,
+.card textarea::placeholder {
+  color: #9ca3af;
+}
+
+.card input:focus,
+.card textarea:focus {
+  border-color: #1a56db;
+}
+
+.card textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.card button {
+  width: 100%;
+  background-color: #1a56db;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  margin-top: 4px;
+  transition: background-color 0.2s;
+}
+
+.card button:hover {
+  background-color: #1447b8;
+}
