@@ -36,6 +36,7 @@ body {
     
 }
 
+
 .logo ul a {
     color: rgb(45, 49, 241);
     font-size: 15px;
@@ -141,6 +142,8 @@ ul.bombas li p {
     font-weight: bold;
     cursor: pointer;
 }
+
+
 
 
 
@@ -315,6 +318,7 @@ main {
 .card button:hover {
   background-color: #1447b8;
 }
+<<<<<<< HEAD
 
 
 
@@ -449,3 +453,5 @@ main {
 
     
 }
+=======
+>>>>>>> 2e0408bcd15bc5374c9cfa52061a91e79e3aec3e
