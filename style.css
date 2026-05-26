@@ -1,11 +1,13 @@
-
-
-
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
@@ -15,7 +17,7 @@
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
-    margin-top: 10px ;
+    margin-top: 0;
     margin-bottom: none;
     
 }
@@ -75,8 +77,10 @@
     flex-direction: column; 
     align-items: center;
     width: 100%;
-    padding: 40px 48px;
+    padding: 24px 48px;
     background-color: #f0f0f0;
+    flex: 1;
+    
 }
 
 .solucoes h2 {
@@ -138,11 +142,7 @@ ul.bombas li p {
     cursor: pointer;
 }
 
- #sub  {
 
-    margin-top: 27px;
-/* Isso aqui foi uma gambiarra horrorosa, tô fazendo de cabeça a página*/
-}
 
 .bombas button {
     background-color: transparent;
@@ -152,13 +152,13 @@ ul.bombas li p {
 }
 
 footer {
-  width: 96.5%;
+  width: 100%;
   padding: 1px;  
   height: fit-content;
   background-color: rgb(92, 92, 92);
-   bottom: 0;
-    position: fixed;
-    margin-right: 100px ;
+  margin-top: 170px;
+  position: static;
+    
     
 }
 footer h3 {
@@ -248,11 +248,13 @@ main {
 .card {
   background: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.521);
   padding: 40px 36px;
   width: 100%;
   max-width: 380px;
 }
+
+
 
 .card h2 {
   text-align: center;
@@ -305,8 +307,145 @@ main {
   letter-spacing: 0.3px;
   margin-top: 4px;
   transition: background-color 0.2s;
+  
+ 
+    
 }
 
 .card button:hover {
   background-color: #1447b8;
+}
+
+
+
+/* A partir daqui é LOGIN */
+
+.card img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    
+
+}
+
+#log-icon {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #24ad09;
+    margin-bottom: 3px;
+    padding: 5px;
+    border-radius: 2px ;
+}
+
+.card button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* A partir daqui é o BEM-VINDO */
+
+
+.cabecalho{
+      color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #082bc7;
+    margin-bottom: 3px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 650px;
+    text-decoration: none;
+    
+}
+
+.cabecalho a {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #d63811;
+    margin-bottom: 3px;
+    padding: 5px 15px;
+    border-radius: 5px ;
+}
+
+
+.container-princ {
+    display: flex; 
+    min-height: 100vh; 
+}
+
+.barra-lat {
+    width: 250px; 
+    background-color: #f7f7f7;
+    color: white;
+    padding: 20px;
+}
+
+.barra-lat ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.barra-lat ul li a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    margin: auto;
+      background-color: #1d5be0; 
+    border-radius: 10px;
+}
+
+
+
+.content {
+    flex: 1; 
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.bem-vindo{
+ background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.521);
+  padding: 40px 36px;
+  max-width: 380px;
+  width: 100%;
+  height: 160px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.bem-vindo h2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    color: #1447b8;
+    margin-left: 10px ;
+
+
+}
+
+.bem-vindo p{
+    padding: 18px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+
+    
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <header class="logo">
+        <img src="./IMG/Windows.png" alt="logo">
+        <ul>
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html" class="selecionado">Contato</a>
+            <a id="log-icon" href="login.html">Login</a>
+        </ul>
+
+        <!-- Usando mesmo formato do contato.html e parte de seu style -->
+    <main>
+    <div class="card">
+        <img src="./IMG/Windows.png" alt="Logo">
+
+      <h2>Login</h2>
+
+      <!-- MUDANÇAS: adicionado id="form" no form, id="email", id="senha", id="button" -->
+      <!-- e um parágrafo oculto para exibir erros. Tudo o mais está idêntico. -->
+      <form id="form">
+        <input id="email" type="email" placeholder="Seu E-mail" />
+        <input id="senha" type="password" placeholder="Digite sua senha"/>
+        <p id="mensagem-erro" style="display:none; color:#c0392b; font-size:13px; text-align:center; font-weight:600; margin-bottom:8px;"></p>
+        <button id="button" type="submit">Acessar</button>
+      </form>
+    </div>
+    </main>
+
+    <!-- Script movido para cá para garantir que o DOM já carregou -->
+    <script src="bomba.js"></script>
+
+</body>
+</html>

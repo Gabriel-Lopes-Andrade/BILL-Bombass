@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<!-- Usando mesmo formato do contato.html e parte de seu style -->
+    <header>
+        <div class="cabecalho">
+            <h2>Sistema Hidráulica Pro</h2>
+            <a href="./home.html">Sair</a>
+        </div>
+
+    </header>
+
+    <div class="container-princ">
+    <!-- Coluna Lateral (Abas) -->
+    <nav class="barra-lat">
+        <ul>
+            <li><a href="" class="active" onclick="abrirConsulta(event)">Consultar Pedido</a></li>
+        </ul>
+    </nav>
+
+    <!-- Card Bem-vindo: some quando consulta é aberta -->
+    <container id="tela-bemvindo" class="bem-vindo">
+      <h2>Bem-vindo</h2>
+      <p>Selecione uma opção no menu lateral.</p>
+    </container>
+
+    <!-- Card Consulta: começa escondido -->
+    <div id="tela-consulta" class="card" style="display:none; margin:auto; height:fit-content;">
+      <h2>Consulta de Bombas</h2>
+      <input id="input-consulta" type="number" placeholder="Nº do Pedido" />
+      <p id="erro-consulta" style="display:none; color:#c0392b; font-size:13px; text-align:center; font-weight:600; margin-bottom:8px;"></p>
+      <button type="button" style="background-color:#24ad09;" onclick="consultarPedido()">Consultar</button>
+    </div>
+
+    </div>
+
+    <script src="consulta-pedido.js"></script>
+
+</body>
+</html>
