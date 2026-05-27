@@ -323,14 +323,12 @@ main {
 
 /* A partir daqui é LOGIN */
 
-.card img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-    
-
+.card > img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin: 0 auto 16px;
 }
 
 #log-icon {
@@ -362,7 +360,7 @@ main {
     padding: 10px;
     display: flex;
     flex-direction: row;
-    gap: 650px;
+    justify-content: space-between;
     text-decoration: none;
     
 }
@@ -451,4 +449,77 @@ main {
     justify-content: center
 
     
+}
+
+
+/* ============================================================
+   CARD DE RESULTADO - CONSULTA DE PEDIDO
+    ============================================================ */
+
+#resultado-pedido {
+    margin-top: 16px;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.card-resultado {
+    display: flex;
+    gap: 16px;
+    background: #f8f9ff;
+    border: 1px solid #d0d8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(20, 71, 184, 0.10);
+}
+
+.card-imagem {
+    width: 140px;
+    min-height: 140px;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: #e8edf5;
+}
+
+.card-info {
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.card-badge {
+    display: inline-block;
+    background: #1447b8;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    width: fit-content;
+    letter-spacing: 0.5px;
+}
+
+.card-titulo {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.card-id {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+
+.card-preco {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1447b8;
+    margin: 0;
 }
